@@ -14,6 +14,10 @@ body, html {
   line-height: 1.8;
 }
 
+.imgContainer {
+  float:left;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -130,19 +134,31 @@ of programming that intrigues me!</p>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
+    <div class="w3-third">
+      <h4>Tic-Tac-Toe</h4>
       <img src="tictactoe.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tic-Tac-Toe (My first ever coding project)">
+      <p> I built a simple Tic-Tac-Toe game for my first ever project.</p>
     </div>
 
-    <div class="w3-col m3">
-      <img src="game1.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dungeon Master (Menu)">
+    
+    <div class="w3-third">
+      <h4>Dungeon Master</h4>
+      <div class="w3-row">
+        <div class="w3-half">
+          <img src="game1.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dungeon Master (Menu)">
+        </div>
+        <div class="w3-half">
+          <img src="game2.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dungeon Master (In-Game)">
+        </div>
+      </div>
+      <p> I created a 2D dungeon crawler game from scratch by only using Python. In this game, the player needs to outlive the monsters as long as possible. 
+        The player can use coins to purchase armor and upgrades to defeat the monsters and to increase the chance of survival.</p>
     </div>
-
-    <div class="w3-col m3">
-      <img src="game2.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dungeon Master (In-Game)">
-    </div>
-    <div class="w3-col m3">
+    
+    <div class="w3-third">
+      <h4>Vaccine App</h4>
       <img src="vaccine.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vaccine App (Java/SQL application)">
+      <p>An application used by nurses to store patients' vaccination information into the database.</p>
     </div>
   </div>
 </div>
