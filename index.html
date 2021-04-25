@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -98,24 +100,28 @@ body, html {
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Hi reader!</em></p>
-  <p>My name is Janssen Qu and I am a U2 student studying Computer Science at McGill University. If you do not know me yet, I am sympathetic, open-minded, patient and perseverant. I believe that there are always hopes and solutions to every problem we face every day. I have interests in many things such as science, art, music and sports. Nevertheless, coding is my biggest passion! </p>
+<div class="w3-content w3-container w3-padding-64" data-aos-duration=600 id="about">
+  <div data-aos="fade-down" data-aos-offset="250">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>Hi reader!</em></p>
+    <p>My name is Janssen Qu and I am a U2 student studying Computer Science at McGill University. If you do not know me yet, I am sympathetic, open-minded, patient and perseverant. I believe that there are always hopes and solutions to every problem we face every day. I have interests in many things such as science, art, music and sports. Nevertheless, coding is my biggest passion! </p>
+  </div>
   <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
+    <div class="w3-col m6 w3-center w3-padding-large" data-aos="fade-right" data-aos-offset="400">
       <p><b><i class="fa fa-user w3-margin-right"></i>Janssen Qu</b></p><br>
       <img src="me.jpg" class="w3-round w3-image" alt="Photo of Me" width="300">
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-padding-large">
+    <div class="w3-col m6 w3-padding-large" data-aos="fade-left" data-aos-offset="300">
       <p>The story began when I read many articles about Python taking the crown for the most used programming language in the world. Since I loved math and logic, I wanted to learn Python and wrote my first code. I realised that I was enjoying coding, therefore I followed a full course on Python and built my first ever Python project. I decided to pursue my career in programming and started studying Computer Science. I recently learnt different types of algorithms and I admire the numerous ways programmers use to make programs quick and efficient. I also got the chance to learn SQL which drove me to explore more into data science. I like to touch on every aspect
 of programming that intrigues me!</p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Languages that I am familiar with:</p>
-  <p class="w3-center">Python, Java, C, IBM Db2, PostgreSQL, Cypher, Ocaml, Bash, MIPS, MATLAB, R, LaTeX, HTML, CSS</p>
+  <div data-aos="fade-up" data-aos-offset="200">
+    <p class="w3-large w3-center w3-padding-16">Languages that I am familiar with:</p>
+    <p class="w3-center">Python, Java, C, IBM Db2, PostgreSQL, Cypher, Ocaml, Bash, MIPS, MATLAB, R, LaTeX, HTML, CSS</p>
+  </div>
   </div>
 </div>
 
@@ -129,36 +135,36 @@ of programming that intrigues me!</p>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY PROJECTS</h3>
-  <p class="w3-center"><em>Here are my recent works<br> Click on the images to make them bigger</em></p><br>
-
+  <div data-aos="zoom-out-down">
+    <h3 class="w3-center">MY PROJECTS</h3>
+    <p class="w3-center"><em>Here are my recent works<br> Click on the images to make them bigger</em></p><br>
+  </div>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-third">
-      <h4>Tic-Tac-Toe</h4>
-      <img src="tictactoe.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tic-Tac-Toe (My first ever coding project)">
-      <p> I built a simple Tic-Tac-Toe game for my first ever project.</p>
+      <h4 data-aos="zoom-out-up">Tic-Tac-Toe</h4>
+      <img src="tictactoe.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" data-aos="zoom-out-up" alt="Tic-Tac-Toe (My first ever coding project)">
+      <p data-aos="zoom-out-up" data-aos-offset="80"> I built a simple Tic-Tac-Toe game for my first ever project.</p>
     </div>
-
     
     <div class="w3-third">
-      <h4>Dungeon Master</h4>
+      <h4 data-aos="zoom-out-up">Dungeon Master</h4>
       <div class="w3-row">
-        <div class="w3-half">
+        <div data-aos="zoom-out-up" class="w3-half">
           <img src="game1.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dungeon Master (Menu)">
         </div>
-        <div class="w3-half">
+        <div data-aos="zoom-out-up" class="w3-half">
           <img src="game2.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dungeon Master (In-Game)">
         </div>
       </div>
-      <p> I created a 2D dungeon crawler game from scratch by only using Python. In this game, the player needs to outlive the monsters as long as possible. 
+      <p data-aos="zoom-out-up"> I created a 2D dungeon crawler game from scratch by only using Python. In this game, the player needs to outlive the monsters as long as possible. 
         The player can use coins to purchase armor and upgrades to defeat the monsters and to increase the chance of survival.</p>
     </div>
     
     <div class="w3-third">
-      <h4>Vaccine App</h4>
-      <img src="vaccine.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vaccine App (Java/SQL application)">
-      <p>An application used by nurses to store patients' vaccination information into the database.</p>
+      <h4 data-aos="zoom-out-up">Vaccine App</h4>
+      <img src="vaccine.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" data-aos="zoom-out-up" alt="Vaccine App (Java/SQL application)">
+      <p data-aos="zoom-out-up">An application used by nurses to store patients' vaccination information into the database.</p>
     </div>
   </div>
 </div>
@@ -181,14 +187,15 @@ of programming that intrigues me!</p>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">SEND ME AN EMAIL</h3>
-  <p class="w3-center"><em>I will be glad to reply!</em></p>
-
+  <div data-aos="fade-down">
+    <h3 class="w3-center">SEND ME AN EMAIL</h3>
+    <p class="w3-center"><em>I will be glad to reply!</em></p>
+  </div>
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
+    <div class="w3-col m4 w3-container" data-aos="fade-right">
       <img src="ottawa.jpg" class="w3-image w3-round" style="width:100%">
     </div>
-    <div class="w3-col m8 w3-panel">
+    <div class="w3-col m8 w3-panel" data-aos="fade-left">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i> Gatineau, QC<br>
         <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i> Email: janssen0105@gmail.com<br>
@@ -214,7 +221,7 @@ of programming that intrigues me!</p>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey" data-aos="fade-up"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/janssen.qu" style="text-decoration:none;" class="fa fa-facebook-official w3-hover-opacity"></a>
     <a href="https://www.instagram.com/ur_fav_qtip/" style="text-decoration:none;" class="fa fa-instagram w3-hover-opacity"></a>
@@ -311,6 +318,8 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 </script>
-
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
